@@ -40,5 +40,18 @@ int main() {
     cout << "Empty array (Test 03):" << endl;  //Test 03
     printVector(findAllIndices(arr3, 5));   //Function call to find element in empty array
 
+
+    vector<int> arr4 = {2,2,2,1,9};
+    cout << "Multiple Occurences (Test 01):" << endl;   //Test 01
+    printVector(findAllIndices(arr4, 2)); //Function call
+
+    vector<int> arr5 = {0, 30, 10};
+    cout << "Key not present (Test 02):" << endl;   //Test 02
+    printVector(findAllIndices(arr5, 9));   //Searching 9 with function call
+
+    vector<int> arr6 = {};
+    cout << "Empty array (Test 03):" << endl;  //Test 03
+    printVector(findAllIndices(arr6, 8));   //Function call to find element in empty array
+
     return 0;
 }

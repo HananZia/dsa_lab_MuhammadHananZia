@@ -38,5 +38,14 @@ int main() {
     cout << "Empty pattern: "
          << findFirstOccurrence("", "SOMETHINGWOULDBE") << endl; // 0
 
+        cout << "Pattern at end: "
+         << findFirstOccurrence("NUST", "SEECSISNUST") << endl; // 7
+
+    cout << "Pattern not present: "
+         << findFirstOccurrence("DSA", "OOPPROGRAMMING") << endl; // -1
+
+    cout << "Empty pattern: "
+         << findFirstOccurrence("", "NOTHINGTOWRITE") << endl; // 0
+
     return 0;
 }
